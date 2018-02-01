@@ -47,31 +47,7 @@ if not "%BF_DEVEL%" == "" (
   goto end
 )
 
-rem Developer environment variable unset; add JAR libraries to classpath.
-if "%BF_IN_MVN_SRCDIR%" == "true" (
-  rem Running from maven build in source dir
-  set "BF_CP=%BF_JAR_DIR%\*;%BF_CP%"
-) else if "%BF_IN_ANT_SRCDIR%" == "true" (
-  rem Running from ant build in source dir
-  set "BF_CP=%BF_JAR_DIR%\bioformats_package.jar;%BF_CP%"
-) else if exist "%BF_JAR_DIR%\jar\" (
-  rem Developer environment variable unset; add JAR libraries to classpath.
-  set "BF_CP=%BF_JAR_DIR%\jar\*;%BF_CP%"
-) else if exist "%BF_JAR_DIR%\bioformats_package.jar" (
-    set "BF_CP=%BF_JAR_DIR%\bioformats_package.jar;%BF_CP%"
-) else (
-  rem Libraries not found; issue an error.
-  echo Required JAR libraries not found. Please download:
-  echo   bioformats_package.jar
-  echo from:
-  echo   http://downloads.openmicroscopy.org/latest/bio-formats
-  if exist "%BF_JAR_DIR%\jar\" (
-    echo and place in %BF_JAR_DIR%/jar.
-  ) else (
-    echo and place in %BF_JAR_DIR%.
-  )
-  goto end
-)
+set "BF_CP=%BF_JAR_DIR%\jar\*;%BF_CP%"
 
 java %BF_FLAGS% -cp "%BF_DIR%";%BF_CP% %BF_PROG% %*
 
