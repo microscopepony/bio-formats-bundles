@@ -32,34 +32,19 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>bio-formats_plugins</artifactId>
-      <version>${bio-formats.version}</version>
+      <version>${bio-formats_plugins.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>bio-formats-tools</artifactId>
-      <version>${bio-formats.version}</version>
+      <version>${bio-formats-tools.version}</version>
     </dependency>
-
-<!--    <dependency>
-      <groupId>org.openmicroscopy</groupId>
-      <artifactId>lwf-stubs</artifactId>
-      <version>${lwf-stubs.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.openmicroscopy</groupId>
-      <artifactId>mipav-stubs</artifactId>
-      <version>${mipav-stubs.version}</version>
-      <scope>provided</scope>
-    </dependency>
-
     <dependency>
       <groupId>net.imagej</groupId>
       <artifactId>ij</artifactId>
       <version>${imagej1.version}</version>
       <scope>provided</scope>
-    </dependency> -->
+    </dependency>
   </dependencies>
 
   <properties>
