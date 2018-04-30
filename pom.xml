@@ -7,7 +7,7 @@
 
   <groupId>ome</groupId>
   <artifactId>bio-formats-bundles</artifactId>
-  <version>5.7.4-SNAPSHOT</version>
+  <version>5.8.2</version>
   <packaging>pom</packaging>
 
   <name>Bio-Formats bundle collection</name>
@@ -29,11 +29,11 @@
          When possible, we advise using the relevant groupId and version
          properties for your dependencies rather than hardcoding them. -->
 
-    <release.version>5.7.3</release.version>
+    <release.version>5.8.2</release.version>
     <date>${maven.build.timestamp}</date>
     <year>2018</year>
     <project.rootdir>${basedir}</project.rootdir>
-    <bioformats.version>5.7.3</bioformats.version>
+    <bioformats.version>5.8.2</bioformats.version>
     <bio-formats_plugins.version>${bioformats.version}</bio-formats_plugins.version>
     <bio-formats-tools.version>${bioformats.version}</bio-formats-tools.version>
     <imagej1.version>1.52a</imagej1.version>
