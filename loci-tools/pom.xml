@@ -8,7 +8,7 @@
   <parent>
     <groupId>ome</groupId>
     <artifactId>bio-formats-bundles</artifactId>
-    <version>5.7.4-SNAPSHOT</version>
+    <version>5.8.2</version>
     <relativePath>..</relativePath>
   </parent>
 
